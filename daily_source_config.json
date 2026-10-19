@@ -1,0 +1,6 @@
+{
+  "dailyFolder": "\\\\williams\\sequent\\SEMDept\\SEM\\Common\\Trading\\Commerical MTM",
+  "pattern": "*TPORT_MTM_COMMERCIAL*.xlsb",
+  "selection": "Explicit file selection if multiple candidates; no latest-modified guess",
+  "nightlyFallback": false
+}

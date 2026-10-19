@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "realSource": "TPORT_MTM_COMMERCIAL_MM-DD-YY_.xlsb",
+  "dates": [
+    "2026-10-13",
+    "2026-10-14"
+  ],
+  "datedRows": 209322,
+  "financialControls": {
+    "currentDate": "2026-10-14",
+    "priorDate": "2026-10-13",
+    "currentRowCount": 105140,
+    "priorRowCount": 104182,
+    "Current_Disc_MTM": 1730216703.0,
+    "Prior_Disc_MTM": 1727442011.0,
+    "Disc_MTM_Change": 2774692.0,
+    "Current_Disc_Fee": -807488052.0,
+    "Prior_Disc_Fee": -806078848.0,
+    "Disc_Fee_Change": -1409204.0,
+    "Current_AllIn": 922728651.0,
+    "Prior_AllIn": 921363163.0,
+    "AllIn_Change": 1365488.0
+  },
+  "checks": [
+    "actual XLSB import and endpoint controls",
+    "unchanged-source reimport without duplicate snapshots",
+    "missing date rejection",
+    "reversed/same date rejection",
+    "explicit version requirement",
+    "payload corruption rejection",
+    "exclusive archive lock",
+    "immutable daily workspace assets",
+    "published audit row count",
+    "browser data and provenance dialog contract",
+    "pyxlsb source header/date read",
+    "installed data.js schema preflight",
+    "nightly-source folder rejection",
+    "archive path traversal rejection",
+    "last-pair pointer preserved on missing-date failure"
+  ],
+  "limits": [
+    "Full real import used calamine; default pyxlsb source header/date access was exercised, not full-file runtime.",
+    "The original v0.3/v0.4 core assets were unavailable in this execution environment. UI asset copying and browser data contract were tested with a minimal non-distributed harness; live Windows integration remains to be exercised.",
+    "No additional historical workbook was fabricated or bundled.",
+    "Date-picker native window was not exercised on Windows."
+  ]
+}

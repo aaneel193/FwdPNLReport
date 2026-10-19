@@ -1,0 +1,106 @@
+{
+  "publisherVersion": "1.0-pilot",
+  "publishedUtc": "2026-10-19T15:54:21.778153+00:00",
+  "current": "2026-10-16",
+  "prior": "2026-10-15",
+  "selectedSnapshots": [
+    {
+      "date": "2026-10-15",
+      "version": "e19a4680ac71b78f291c6507ad637136ed88200185a8ac7ecedcb8412c3836d6",
+      "sourceFiles": [
+        "10-16-2026 TPORT_MTM_COMMERCIAL.xlsb"
+      ],
+      "sourceSha256": [
+        "26634f0b0e6a3e48aeea312bb9d3eca2140586eec09c055bab0de11a73d5d2ff"
+      ],
+      "sourceFlags": {
+        "Curve Shift": 105301,
+        "New Deal": 1404
+      },
+      "financialFingerprint": "66496f7ea1d6931b6f1c22856b56f06db0bc1b0c7e9bf182ad2af2af3f7e012f",
+      "payloadOriginSourceSha256": "26634f0b0e6a3e48aeea312bb9d3eca2140586eec09c055bab0de11a73d5d2ff"
+    },
+    {
+      "date": "2026-10-16",
+      "version": "fba97d1c2c29d3b2c0e9d31a5fc5e2f89b9fe7028998c8ce1a0502816e562488",
+      "sourceFiles": [
+        "10-19-2026 TPORT_MTM_COMMERCIAL.xlsb"
+      ],
+      "sourceSha256": [
+        "5822810a1ec0647d3bf550d1a42f823fb01acd22cfbd015e03c69f13b91c2891"
+      ],
+      "sourceFlags": {
+        "Curve Shift": 106568,
+        "New Deal": 831
+      },
+      "financialFingerprint": "30bcb8cc972b68409f2049a190f9aa55e64ca78f0d16c8e5d99f0fcd391a1b8b",
+      "payloadOriginSourceSha256": "5822810a1ec0647d3bf550d1a42f823fb01acd22cfbd015e03c69f13b91c2891"
+    }
+  ],
+  "rawUnfilteredControls": {
+    "2026-10-16": {
+      "rows": 107399,
+      "MTM": "1704962761.0",
+      "Fee": "-806569651.0",
+      "Total": "898393110.0"
+    },
+    "2026-10-15": {
+      "rows": 106705,
+      "MTM": "1706828987.0",
+      "Fee": "-807144213.0",
+      "Total": "899684774.0"
+    }
+  },
+  "defaultFilterRules": {
+    "ServiceType": [
+      "",
+      "Firm",
+      "Firm - Variable",
+      "Interruptible"
+    ],
+    "EncumberedTag": [
+      "",
+      "No"
+    ],
+    "FwdMonthIncl": [
+      "Yes"
+    ],
+    "ValidEconDealType": [
+      "Yes"
+    ],
+    "InterruptCommTrans": [
+      "NO"
+    ]
+  },
+  "defaultFilteredControls": {
+    "2026-10-16": {
+      "rows": 59396,
+      "MTM": "1687122963.0",
+      "Fee": "-779622805.0",
+      "Total": "907500158.0"
+    },
+    "2026-10-15": {
+      "rows": 59335,
+      "MTM": "1689396232.0",
+      "Fee": "-780214418.0",
+      "Total": "909181814.0"
+    }
+  },
+  "defaultNewDeals": 61,
+  "classificationLabels": [
+    "Curve Shift",
+    "New Deal"
+  ],
+  "scope": "Original five default filters on load; viewer session filters interactive. Not publisher local-session filters.",
+  "warning": "All embedded rows are available to recipients. Filters are not security boundaries.",
+  "htmlBytes": 1830853,
+  "htmlSha256": "142a36729ec3569d108ea744350c568649cb5beeee63587cf15c2fbaf9441652",
+  "assetHashes": {
+    "workspace HTML": "97b5112a8d0479e20d0af4c9291db4488447147c92370a097fde716a1957ef78",
+    "served core": "06ed23b211ec4dd94dd1ee8132245414a2e4ca835367c1e893f8c9b18f971e00",
+    "xlsx_export.js": "ef0ac4868b78dfbb038bc300846a1a74fc2234f18b0bb66b8ddccad3d5438b3f",
+    "workspace.css": "8e13752c7486b7854906631717cabf1b823073e1281523cd86faa12b4d8617c9"
+  },
+  "javascriptParser": "not available locally",
+  "status": "GENERATED_NOT_RECONCILED"
+}

@@ -1,0 +1,75 @@
+{
+  "datedRows": 209322,
+  "sourceFields": {
+    "New Deal / C-Shift": {
+      "column": 101,
+      "values": {
+        "Curve Shift": 208503,
+        "New Deal": 819
+      }
+    },
+    "Fwd_Month_Incl": {
+      "column": 93,
+      "values": {
+        "No": 30867,
+        "Yes": 178455
+      }
+    },
+    "Valid Econ Deal Type": {
+      "column": 102,
+      "values": {
+        "No": 53218,
+        "Yes": 156104
+      }
+    },
+    "CURRENCY": {
+      "column": 43,
+      "values": {
+        "CAD": 4138,
+        "USD": 205184
+      }
+    },
+    "Year Group": {
+      "column": 71,
+      "values": {
+        "2026.0": 52477,
+        "2027.0": 68011,
+        "2028.0": 28690,
+        "2029.0": 13436,
+        "2030 Fwd.": 46708
+      }
+    }
+  },
+  "missing": {},
+  "dateFields": {
+    "EODDATE": 2,
+    "TRADEDATE": 3,
+    "DEALSTARTDATE": 8,
+    "DEALENDDATE": 9,
+    "PAYMENTDATE": 28,
+    "Last Update": 50
+  },
+  "dealCountsByDate": {
+    "2026-10-13": 22860,
+    "2026-10-14": 23437
+  },
+  "currentOnlyDealIDs": 577,
+  "priorOnlyDealIDs": 0,
+  "sharedDealIDs": 22860,
+  "sourceFlagsByDate": {
+    "2026-10-13": {
+      "Curve Shift": 104182
+    },
+    "2026-10-14": {
+      "Curve Shift": 104321,
+      "New Deal": 819
+    }
+  },
+  "newFlagTradeDateCheck": {
+    "2026-10-14": {
+      "tradeDateAfterPrior": 819
+    }
+  },
+  "dateDealContractMonthGroupsWithMultipleRows": 47763,
+  "note": "Source flags are stored values; their generating formulas and attribution rules were not established. Multiple rows at a grain are not evidence of duplicates."
+}

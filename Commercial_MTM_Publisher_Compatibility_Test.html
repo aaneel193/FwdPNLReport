@@ -1,0 +1,15 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>MTM publisher packaging test</title><style>body{font:16px Segoe UI,Arial;margin:30px}button{padding:12px}#publisher-banner{padding:18px;background:#eef4fb}</style></head><body><h1>Publisher packaging compatibility test</h1><p>No business data. Tests gzip decoding and dynamic inline script execution.</p><section id="publisher-banner"><p id="publisher-load">NOT VERIFIED: packaged scripts have not completed.</p></section><button id="test-button">Test interaction</button><p id="test-result">No interaction recorded.</p><script type="application/octet-stream" id="publisher-payload">H4sIAAAAAAACA6uuBQBDv6ajAgAAAA==</script><script type="application/json" id="publisher-scripts">["document.getElementById('publisher-load').textContent='PASS: gzip decoded and inline script executed.';document.getElementById('publisher-banner').dataset.state='loaded';document.getElementById('test-button').addEventListener('click',()=\u003edocument.getElementById('test-result').textContent='PASS: interaction works.');"]</script><script>
+(async()=>{'use strict';const status=document.getElementById('publisher-load');
+ function fail(e){status.textContent='REPORT NOT READY: '+(e.message||e);document.getElementById('publisher-banner').dataset.state='error';console.error(e);}
+ window.addEventListener('error',e=>fail(e.error||e));
+ try{
+  if(!globalThis.DecompressionStream)throw Error('Embedded gzip decoder unavailable in this browser.');
+  const bytes=Uint8Array.from(atob(document.getElementById('publisher-payload').textContent.trim()),c=>c.charCodeAt(0));
+  const stream=new Blob([bytes]).stream().pipeThrough(new DecompressionStream('gzip'));
+  window.PNL_DATA=JSON.parse(await new Response(stream).text());
+  const mem=new Map();window.PNL_PUBLISHER_STORAGE={getItem:k=>mem.get(k)??null,setItem:(k,v)=>mem.set(k,String(v)),removeItem:k=>mem.delete(k),clear:()=>mem.clear()};
+  const scripts=JSON.parse(document.getElementById('publisher-scripts').textContent);
+  for(const code of scripts){const el=document.createElement('script');el.textContent=code;document.body.appendChild(el);}
+ }catch(e){fail(e);}
+})();
+</script></body></html>

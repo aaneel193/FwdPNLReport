@@ -1,0 +1,15 @@
+{
+  "startedUtc": "2026-10-16T19:45:56.317215+00:00",
+  "source": "\\\\williams\\sequent\\SEMDept\\SEM\\Common\\Trading\\Commerical MTM\\10-16-2026 TPORT_MTM_COMMERCIAL.xlsb",
+  "folder": "\\\\williams\\sequent\\SEMDept\\SEM\\Common\\Trading\\Commerical MTM",
+  "status": "SUCCESS",
+  "sourceCopySeconds": 12.521983199985698,
+  "extractAndPublishSeconds": 89.22616489999928,
+  "valuationDates": [
+    "2026-10-14",
+    "2026-10-15"
+  ],
+  "sourceSha256": "26634f0b0e6a3e48aeea312bb9d3eca2140586eec09c055bab0de11a73d5d2ff",
+  "sourceSizeBytes": 111200953,
+  "totalSeconds": 114.86478460003855
+}

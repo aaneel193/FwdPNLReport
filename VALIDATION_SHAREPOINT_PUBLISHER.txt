@@ -1,0 +1,11 @@
+PUBLISHER 1.0 PILOT - VALIDATION
+
+PASS gzip decode, script order, in-memory storage.
+PASS Python compile, actual HTML adapter anchors, fail-closed mismatch, generated JS parsing, empty-payload lossless round trip, five-default controls, no external scripts, checksum.
+
+Not tested: actual archive pair preparation, complete real workspace execution,
+actual business-data reconciliation, actual output size/performance, SharePoint
+sandbox behavior, export/print. Browser automation was attempted but no browser
+binary was installed. No claim of full-browser validation is made.
+
+No financial data was fabricated. Tests used empty-row payloads and code stubs.

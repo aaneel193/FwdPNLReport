@@ -1,0 +1,27 @@
+0.8.1 VALIDATION SUMMARY
+
+Passed in this session:
+- Python compilation of candidate and installer.
+- Node syntax parsing of injected core, client, and patched adapter fixture.
+- Controlled row fixtures: dictionary column index 0, distinct identifiers,
+  trimmed blanks, classification trim/case, C-Shift exclusion, Current date,
+  active filter changes, valid zero and missing-dictionary error.
+- Adapter fixture: MTM/Fee/Total rendered; NewDeals excluded; obsolete movement
+  function cannot schedule its former writer.
+- Missing/duplicate/changed adapter anchors rejected.
+- Completion fixture: missing card, error, stale generation rejected;
+  ready current-generation integer accepted.
+- Installer failure fixture: current app byte-identical after rejected preflight;
+  exact rollback backup created.
+- Source comparison: prepare_pair, load_selections, save_selections, get_catalog,
+  save_metric unchanged; replaceData extension unchanged.
+
+Not verified:
+- Actual inline visual adapter: HTML source was not available for inspection.
+- Actual classification dictionary or independent New Deals source count.
+- Real browser rendering, filter badge layout, print, themes, keyboard and popup.
+- Full local --check against the user's archive and snapshot_manager.
+- Full-precision financial reconciliation.
+
+These tests use isolated code/row fixtures, not simulated financial results.
+Do not treat this package as accepted production release until local checks pass.

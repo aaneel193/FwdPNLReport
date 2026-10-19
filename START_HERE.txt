@@ -1,0 +1,24 @@
+DEFAULT LOAD FILTERS
+
+1. Extract all four files beside the existing workspace folder in the main project folder.
+2. Run INSTALL_DEFAULT_FILTERS.cmd.
+3. Reload the daily or historical dashboard. No workbook import or pair publication is needed.
+
+Selections applied on every page load:
+Service Type: blank, Firm, Firm - Variable, Interruptible.
+Encumbered Tag: (Blank) and No.
+Fwd Month Included: Yes.
+Valid Economic Deal Type: Yes.
+Interrupt Comm-Trans?: NO.
+
+Blank matches either an empty/whitespace value or the existing (Blank) label. Other values match the shown spelling and case after trimming. New/unrecognized values are excluded, not silently included. A missing field or no matching allowed values produces an empty selection and a visible warning rather than widening scope.
+
+The five fields are defaults, not locked restrictions. Users can change or clear them during a session. Reloading reapplies these five defaults. Other filters and the existing Clear all/Reset filters behavior are not redefined. Reset columns remains unchanged.
+
+The installer patches current workspace HTML, main HTML templates, and existing history_views pages, with .before_default_filters backups. Future historical views inherit the patched workspace HTML when published with the existing v0.5 publisher. The existing daily launcher preserves HTML. Replacing/rebuilding HTML with an older visual installer can remove this patch; rerun this installer afterward.
+
+Source workbooks, archived snapshots, data.js, financial formulas, hierarchy, required slicers, and core JS/CSS are not edited. Source metadata remains raw-population provenance; this patch is a visible slicer selection, not a certified tie-out preset or an assertion that future files reconcile to Excel.
+
+This adapter uses the existing PNL_APP state/schedule interface. It was tested with an isolated API/browser harness; live Windows integration must be confirmed locally. Verify five active filters and reconcile both endpoints after first load.
+
+Rollback: restore each HTML .before_default_filters backup. No data restore is required.

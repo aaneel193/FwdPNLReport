@@ -1,0 +1,16 @@
+{
+  "appliedUtc": "2026-10-16T19:47:50.968551+00:00",
+  "updatedPages": [],
+  "dataAndCoreUnchanged": true,
+  "protectedHashes": {
+    "build_report.json": "0a73e860f22466ecae3d5249e0bb9bd3a5d7a7794607789e4a63a7a7c6b0d3b7",
+    "data.js": "efafb41cb3f54a688e3340beb7efb98ed72416b3443bda0bf1228e69a211a2d5",
+    "index.html.before_daily_patch": "0db5df276110ed381e6bc61088a56b71efe5067ae6d1d6e4ad4a567eb0fe7ef5",
+    "index_v0_4.html.before_daily_patch": "da3ea4a8c65844e604fb4bfee09f637910a26391cf673c637946d759a0cef556",
+    "source_records.csv.gz": "164168e57d78511f8a6dbb2d40b1221b779b0dc7ce0f55e2803daa1dfbdcd869",
+    "visual_patch_manifest.json": "307d75caa40bb46df88436303c2bc20f5a8d0d2c06f811043ecfe874cbabb668",
+    "workspace.css": "8e13752c7486b7854906631717cabf1b823073e1281523cd86faa12b4d8617c9",
+    "workspace.js": "eef772990149a0a1d50c9afa0363e8061b4760096120a69cc7a4302f9dbb6cd7",
+    "xlsx_export.js": "ef0ac4868b78dfbb038bc300846a1a74fc2234f18b0bb66b8ddccad3d5438b3f"
+  }
+}
